@@ -1,0 +1,171 @@
+
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://images.pexels.com/photos/808822/pexels-photo-808822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            height: 100vh;
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+
+        /* Logo Styles */
+        .logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Navbar Links */
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+            transform: scale(1.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .hero p {
+            font-size: 24px;
+            animation: slideIn 3s ease-out;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #f39c12;
+        }
+
+        section p {
+            font-size: 18px;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+
+        /* Car Card Container */
+        .car-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .car-card {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .car-card h3 {
+            margin-top: 15px;
+            font-size: 24px;
+        }
+
+        .car-card p {
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+    
